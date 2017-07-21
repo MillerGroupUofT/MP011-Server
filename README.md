@@ -1,10 +1,10 @@
 # Documentation
 
+*MP011-Server* is a simple server program written in C++ to handle the interface with scientific instruments connected over RS232 serial communication. It is meant to be used in conjunction with the *MP011-Experiment-Control* MATLAB app for instrument control and data acquisition ([link](https://github.com/liunelson/MP011-Experiment-Control)). This app connects and sends pre-formatted commands to *MP011-Server* instances over TCP-IP Ethernet; the server instances in turn open a serial COM port and pass the commands (and receives data from) to their respective RS232 device.
+
 ![Screenshot of MP011-Server program.](MP011-server.png)
 
-*MP011-Server* is a simple server program written in C++ to handle the interface with scientific instruments connected over RS232 serial communication. It is meant to be used in conjunction with the `MP011-Experiment-Control` MATLAB app for instrument control and data acquisition ([link](https://github.com/liunelson/MP011-Experiment-Control)). This app connects and sends pre-formatted commands to `MP011-Server` instances over TCP-IP Ethernet; the server instances in turn open a serial COM port and pass the commands to their respective RS232 device.
-
-At present, a new instance of `MP011-Server` is necessary for each RS232 serial device and only one client can connect to each server at a time.
+At present, a new instance of *MP011-Server* is necessary for each RS232 serial device and only one client can connect to each server at a time.
 
 This program has been compiled and tested successfully on various versions of Microsoft Windows OS (from Windows XP to 10).
 
